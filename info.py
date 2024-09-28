@@ -18,18 +18,18 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+API_ID = int(environ.get('API_ID', '19813842'))
+API_HASH = environ.get('API_HASH', '18d933fd70235eb8dd2a7139b00de332')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8057735793:AAH1it8VmC9z-Jgjk_BUYTPo27ECEdUuyV4')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1075422084').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/CodeXBro')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002487181109'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002285292296').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "-100")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002346421447'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
